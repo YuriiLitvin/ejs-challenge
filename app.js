@@ -29,7 +29,14 @@ app.get("/contact", function(req, res) {
   res.render("contact", {contactPageContent: contactContent});
 });
 
+app.get("/compose", function(req, res) {
+  res.render("compose");
+});
 
+app.post("/compose", function(req, res) {
+  const newPost = req.body.newPost;
+  console.log(newPost);
+});
 
 
 
