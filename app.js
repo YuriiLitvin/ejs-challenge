@@ -34,8 +34,11 @@ app.get("/compose", function(req, res) {
 });
 
 app.post("/compose", function(req, res) {
-  const title = req.body;
-  console.log(title.postTitle, title.postBody);
+  const newPost = {
+    title: req.body.postTitle,
+    content: req.body.postBody
+  };
+  console.log(newPost);
 });
 
 
