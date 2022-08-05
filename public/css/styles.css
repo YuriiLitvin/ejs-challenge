@@ -1,3 +1,9 @@
+.truncated {
+  max-width: 79ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
