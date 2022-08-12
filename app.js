@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/blogDB");
+  await mongoose.connect("mongodb+srv://admin-yuri:tested1521@cluster0.rvllyyy.mongodb.net/blogDB");
 }
 
 const postSchema = new mongoose.Schema ({
